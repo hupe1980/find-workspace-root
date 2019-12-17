@@ -28,7 +28,7 @@
     "watch": "tsc -w",
     "test": "jest",
     "lint": "eslint '*/**/*.{ts,tsx}' --report-unused-disable-directives",
-    "prepare": "npm run test && npm run build"
+    "prepublishOnly": "npm run test && npm run build"
   },
   "dependencies": {
     "fs-extra": "^8.1.0",
