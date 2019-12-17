@@ -1,5 +1,7 @@
 # find-workspace-root
 
+[![Build Status](https://travis-ci.org/hupe1980/find-workspace-root.svg?branch=master)](https://travis-ci.org/hupe1980/find-workspace-root)
+
 > Find the root of a multi-package repo with Yarn workspaces
 
 ## Installation
