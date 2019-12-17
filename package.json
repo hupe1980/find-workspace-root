@@ -1,0 +1,50 @@
+{
+  "name": "find-workspace-root",
+  "description": "Find the root of a multi-package repo with Yarn workspaces",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hupe1980/find-workspace-root.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hupe1980/find-workspace-root/issues"
+  },
+  "homepage": "https://github.com/hupe1980/find-workspace-root#readme",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "yarn",
+    "workspaces",
+    "monorepo",
+    "multi-package",
+    "root"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "lint": "eslint '*/**/*.{ts,tsx}' --report-unused-disable-directives",
+    "prepare": "npm run test && npm run build"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "micromatch": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.1",
+    "@types/micromatch": "^3.1.1",
+    "@types/jest": "^24.0.21",
+    "@types/node": "^12.12.5",
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  }
+}
